@@ -272,7 +272,7 @@ topTable(efit, coef = 2)
 numGenes <- nrow(exprs(exp_set))
 full_list <- topTable(efit, number = numGenes)
 full_list <- full_list[full_list$adj.P.Val <= 0.05,]
-write.csv(full_list, 'C:/Users/matt/Desktop/proteomicsHW/DE_full.csv')
+write.csv(full_list, 'results/DE_full.csv')
 ```
 
 
